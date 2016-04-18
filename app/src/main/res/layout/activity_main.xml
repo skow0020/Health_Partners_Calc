@@ -1,0 +1,297 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="HIH"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_marginEnd="221dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="HPMed"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/outbrain1"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:width="80sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/outbrain2"
+        android:layout_alignTop="@+id/outbrain1"
+        android:layout_alignParentEnd="true"
+        android:width="80sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="outbrain"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/outbrain1"
+        android:layout_centerHorizontal="true"
+        android:padding="7sp"
+        android:background="#94cdd7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Facebook"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/outbrain1"
+        android:layout_centerHorizontal="true"
+        android:padding="7sp"
+        android:background="#94cdd7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Adwords"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:padding="7sp"
+        android:background="#94cdd7" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/fb1"
+        android:width="80sp"
+        android:layout_below="@+id/outbrain1"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/adwords1"
+        android:width="80sp"
+        android:layout_below="@+id/fb1"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/fb2"
+        android:width="80sp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/outbrain2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/adwords2"
+        android:width="80sp"
+        android:layout_below="@+id/fb2"
+        android:layout_alignStart="@+id/fb2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Spend"
+        android:id="@+id/textView6"
+        android:padding="7sp"
+        android:layout_below="@+id/adwords2"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/spend2"
+        android:width="80sp"
+        android:layout_below="@+id/adwords2"
+        android:layout_alignStart="@+id/adwords2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/spend1"
+        android:width="80sp"
+        android:layout_below="@+id/adwords1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="# of Sessions"
+        android:id="@+id/textView7"
+        android:padding="7sp"
+        android:layout_below="@+id/spend2"
+        android:layout_centerHorizontal="true"
+        android:background="#94cdd7" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/sessions1"
+        android:width="80sp"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/sessions2"
+        android:width="80sp"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignStart="@+id/spend2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cost per Session"
+        android:id="@+id/costPerSession"
+        android:padding="7sp"
+        android:layout_below="@+id/sessions1"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/sessionCost2"
+        android:width="80sp"
+        android:layout_alignTop="@+id/costPerSession"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/sessionCost1"
+        android:width="80sp"
+        android:layout_alignTop="@+id/costPerSession"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Last Month&apos;s Cost"
+        android:id="@+id/textView8"
+        android:padding="7sp"
+        android:layout_below="@+id/sessionCost1"
+        android:layout_centerHorizontal="true"
+        android:background="#94cdd7"
+        android:autoText="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="% Change"
+        android:padding="7sp"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtChange"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/lastMonth1"
+        android:width="80sp"
+        android:layout_below="@+id/sessionCost1"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/change1"
+        android:width="80sp"
+        android:layout_below="@+id/lastMonth1"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/lastMonth2"
+        android:width="80sp"
+        android:layout_above="@+id/change1"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/change2"
+        android:width="80sp"
+        android:layout_alignTop="@+id/change1"
+        android:layout_alignStart="@+id/lastMonth2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/calculateHIH"
+        android:layout_toStartOf="@+id/textView6"
+        android:onClick="calc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/calculateHPMed"
+        android:layout_alignTop="@+id/calculateHIH"
+        android:layout_toEndOf="@+id/textView6"
+        android:onClick="calc"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
